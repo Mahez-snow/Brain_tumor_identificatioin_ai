@@ -6,7 +6,7 @@
 
 # Live Application
 
-🔗 **Try it here:** [https://brain-tumor-ai.streamlit.app/]()
+🔗 **Try it here:** [[https://brain-tumor-ai.streamlit.app/](https://ai-braintumor-analysis.streamlit.app/)]
 
 TumorSense AI is an AI-powered medical imaging system that detects and classifies brain tumors from MRI scans using deep learning and explainable AI techniques.
 
