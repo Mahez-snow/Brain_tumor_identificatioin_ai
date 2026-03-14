@@ -10,7 +10,7 @@ import cv2
 
 # PAGE CONFIG
 st.set_page_config(
-    page_title="BRAIN-AI | Quantum Diagnostic",
+    page_title="TumorSense-AI | Advanced MRI Diagnostics",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -131,12 +131,11 @@ MODEL_PATH = "brain_tumor_final.keras"
 def load_trained_model():
     # Download model only if not present
     if not os.path.exists(MODEL_PATH):
-        with st.spinner("🔽 Downloading AI model from cloud..."):
-            response = requests.get(MODEL_URL, stream=True)
-            with open(MODEL_PATH, "wb") as f:
-                for chunk in response.iter_content(chunk_size=8192):
-                    if chunk:
-                        f.write(chunk)
+        response = requests.get(MODEL_URL, stream=True)
+        with open(MODEL_PATH, "wb") as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                if chunk:
+                    f.write(chunk)
 
     # Load model
     model = load_model(MODEL_PATH)
