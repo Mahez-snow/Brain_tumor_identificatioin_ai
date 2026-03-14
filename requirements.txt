@@ -1,6 +1,6 @@
-streamlit==1.32.0
-tensorflow==2.15.0
-numpy==1.24.4
-pillow==10.3.0
-opencv-python-headless==4.9.0.80
-requests==2.31.0
+streamlit
+tensorflow
+numpy
+pillow
+opencv-python-headless
+requests
